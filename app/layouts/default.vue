@@ -1,6 +1,9 @@
 <template>
-  <div>
+  <div class="flex flex-col h-screen justify-between">
     <Navbar />
-    <slot />
+    <u-container class="mb-auto">
+        <slot />
+    </u-container>
+    <Footer/>
   </div>
 </template>
