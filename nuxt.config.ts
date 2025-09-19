@@ -11,12 +11,11 @@ export default defineNuxtConfig({
         'secondary',
         'accent',
         'neutral',
-        
+
         'info',
         'success',
         'warning',
         'error',
-
       ]
     }
   }

@@ -12,7 +12,7 @@ import logo from "./assets/images/lydflor-no-bg.png"
 </div>
 </div> -->
     <div class="h-screen w-screen absolute top-0 -z-10">
-        <img class="object-fill w-screen h-200 blur-md mask-b-from-50%"
+        <img class="object-fill w-screen h-200 blur-xs mask-b-from-50%"
         src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
     </div>
     <UContainer class="pt-30">
@@ -32,6 +32,7 @@ import logo from "./assets/images/lydflor-no-bg.png"
             </div>
         </div>
         <u-separator />
+        <TextScroller class="mt-5" text=" 26. MAJ 2026"/>
         <div class="flex flex-wrap content-center my-5 w-full gap-10">
             <card title="Lineup" icon="lucide:music"
                 description="Fra upcoming talenter til etablerede navne – oplev musikken i fuldt flor."
