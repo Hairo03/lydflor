@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { NavigationMenuItem } from '@nuxt/ui'
+import logo from "./assets/images/lydflor-no-bg.png"
 
 const items = ref<NavigationMenuItem[]>([
     {
@@ -21,13 +22,13 @@ const items = ref<NavigationMenuItem[]>([
 
 </script>
 <template>
-    <div>
+    <div class="backdrop-blur-lg">
         <UContainer class="flex">
-            <ULink class="content-center mr-5" to="/">
-                <Icon name="lucide:audio-waveform" size="50" />
+            <ULink class="content-center mr-3" to="/">
+                <img :src="logo" class="w-15"/>
             </ULink>
             <UNavigationMenu color="neutral" :items="items" class="w-full justify-start m-3" />
         </UContainer>
-        <USeparator class="m-1" />
+        <USeparator />
     </div>
 </template>

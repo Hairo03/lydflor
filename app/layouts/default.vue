@@ -1,9 +1,9 @@
 <template>
-  <div class="flex flex-col h-screen justify-between">
-    <Navbar />
-    <u-container class="mb-auto">
+  <div class="flex flex-col h-screen justify-between ">
+    <Navbar class="w-screen fixed top-0 z-50"/>
+    <div class="mb-auto relative">
         <slot />
-    </u-container>
-    <Footer/>
+    </div>
+    <Footer />
   </div>
 </template>
