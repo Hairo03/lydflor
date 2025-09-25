@@ -18,5 +18,9 @@ export default defineAppConfig({
       warning: '#dda448',
       error: '#c43434'
     }
+  },
+  icon: {
+    mode: 'css',
+    cssLayer: 'base'
   }
 })

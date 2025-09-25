@@ -18,5 +18,13 @@ export default defineNuxtConfig({
         'error',
       ]
     }
-  }
+  },
+  icon: {
+    customCollections: [
+      {
+        prefix: 'lydflor',
+        dir: './assets/icons'
+      },
+    ],
+  },
 })
