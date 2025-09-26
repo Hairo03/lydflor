@@ -22,24 +22,26 @@ const items = computed<NavigationMenuItem[]>(() => [
         active: route.path.startsWith('/om-os'),
         icon: "lucide:info"
     }
-    
 ])
+
 </script>
 
 <template>
-    <UHeader>
+    <UHeader class="bg-primary-500/75 backdrop-">
         <template #left>
-            <UNavigationMenu :items="items"/>
+            <UNavigationMenu :items="items" />
         </template>
         <ULink to="/">
-            <Icon name="lydflor:tekst" size="35"/>
+            <Icon name="lydflor:text" size="35" />
         </ULink>
-        
+
         <template #right>
-            <UButton color="primary" variant="ghost" to="/" target="_blank"
-                icon="i-simple-icons-facebook" aria-label="Facebook" />
-            <UButton color="primary" variant="ghost" to="/" target="_blank"
-                icon="i-simple-icons-instagram" aria-label="Instagram" />
+            <ULink to="/instagram">
+                <Icon name="lucide:instagram" size="20" />
+            </ULink>
+            <ULink to="/facebook">
+                <Icon name="lucide:facebook" size="20" />
+            </ULink>
         </template>
     </UHeader>
 </template>

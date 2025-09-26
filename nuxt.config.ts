@@ -2,8 +2,9 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/ui', '@nuxt/icon'],
+  modules: ['@nuxt/ui', '@nuxt/icon', '@nuxt/fonts'],
   css: ['~/assets/css/main.css'],
+  ssr: false,
   ui: {
     theme: {
       colors: [
@@ -23,7 +24,7 @@ export default defineNuxtConfig({
     customCollections: [
       {
         prefix: 'lydflor',
-        dir: './assets/icons'
+        dir: './app/assets/icons'
       },
     ],
   },

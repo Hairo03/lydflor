@@ -1,14 +1,15 @@
 <script setup lang="ts">
 import logo from "./assets/images/lydflor-no-bg.png"
+import heroImg from "./assets/images/farvergården.jpg"
 </script>
 
 <template>
     <div class="h-screen w-screen absolute top-0 -z-10">
-        <img class="object-fill w-screen h-200 blur-xs mask-b-from-50%"
-        src="https://images.unsplash.com/photo-1476231682828-37e571bc172f?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"/>
+        <img class="object-cover w-screen h-220 blur-xs" style="transform: scale(1.02);" :src="heroImg" />
     </div>
+
     <UContainer class="pt-30">
-        <div class="flex flex-col">
+        <div class="flex flex-col pb-30 pt-10">
             <img :src="logo" class="w-50 place-self-center" />
             <div class="text-center mb-30">
                 <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">Hvor lyden
@@ -23,15 +24,24 @@ import logo from "./assets/images/lydflor-no-bg.png"
                 </div>
             </div>
         </div>
-        <u-separator />
-        <TextScroller class="mt-5" text=" 26. MAJ 2026"/>
-        <div class="flex flex-wrap content-center my-5 w-full gap-10">
+    </UContainer>
+
+    <TextScroller class="w-screen" text=" 9. MAJ 2026" />
+    
+    <UContainer>
+        <div class="flex flex-wrap content-center w-full gap-10">
             <card title="Lineup" icon="lucide:music"
-                description="Fra upcoming talenter til etablerede navne – oplev musikken i fuldt flor."
-                src="https://images.unsplash.com/photo-1757997900698-946eaaa84e4c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            description="Fra upcoming talenter til etablerede navne – oplev musikken i fuldt flor."
+            src="https://images.unsplash.com/photo-1757997900698-946eaaa84e4c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
             <card title="Atmosfære" icon="lucide:tree-pine"
-                description="Unikke omgivelser, hvor lyd og rum smelter sammen til en helhedsoplevelse."
-                src="https://images.unsplash.com/photo-1757642520329-b89ba3181784?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+            description="Unikke omgivelser, hvor lyd og rum smelter sammen til en helhedsoplevelse."
+            src="https://images.unsplash.com/photo-1757642520329-b89ba3181784?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
         </div>
+    </UContainer>
+
+    <Countdown :date="new Date('9-5-2026')"/>
+
+    <UContainer>
+        <Collaborators/>
     </UContainer>
 </template>

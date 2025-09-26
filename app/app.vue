@@ -7,7 +7,7 @@
         <NuxtPage />
       </UMain>
 
-      <UFooter />
+      <Footer />
     </UApp>
   </NuxtLayout>
 </template>
