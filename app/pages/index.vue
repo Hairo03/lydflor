@@ -28,8 +28,8 @@ import heroImg from "./assets/images/farvergården.jpg"
 
     <TextScroller class="w-screen" text=" 9. MAJ 2026" />
     
-    <UContainer>
-        <div class="flex flex-wrap content-center w-full gap-10">
+    <UContainer class="mt-20">
+        <div class="flex flex-wrap content-center w-full gap-5">
             <card title="Lineup" icon="lucide:music"
             description="Fra upcoming talenter til etablerede navne – oplev musikken i fuldt flor."
             src="https://images.unsplash.com/photo-1757997900698-946eaaa84e4c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />

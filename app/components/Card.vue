@@ -18,7 +18,7 @@ defineProps({
 </script>
 <template>
   <div
-    class="flex flex-col items-center rounded-lg md:flex-row md:max-w-xl mt-20 bg-neutral-500">
+    class="flex flex-col items-center rounded-lg md:flex-row md:max-w-xl bg-neutral-500">
     <img class="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-s-lg" :src="src"
       alt="">
     <div class="flex flex-col justify-between p-4 leading-normal">

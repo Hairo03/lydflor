@@ -24,24 +24,42 @@ const items = computed<NavigationMenuItem[]>(() => [
     }
 ])
 
+let showBackground = ref(false);
+
+onMounted(() => {
+  window.addEventListener("scroll", () => {
+    showBackground.value = window.scrollY > 800
+  })
+})
+
 </script>
 
 <template>
-    <UHeader class="bg-primary-500/75 backdrop-">
+    <UHeader class="bg-primary-500/75 backdrop-blur-md transition-colors duration-300"
+        :class="{ 'bg-primary-500/0 border-none backdrop-blur-none': !showBackground }">
         <template #left>
-            <UNavigationMenu :items="items" />
+            <UNavigationMenu class="hidden sm:block" :items="items" />
+            <ULink class="sm:hidden ml-5" to="/">
+                <Icon name="lydflor:text" size="35" />
+            </ULink>
         </template>
-        <ULink to="/">
+        <ULink class="hidden md:block" to="/">
             <Icon name="lydflor:text" size="35" />
         </ULink>
 
         <template #right>
-            <ULink to="/instagram">
-                <Icon name="lucide:instagram" size="20" />
-            </ULink>
-            <ULink to="/facebook">
-                <Icon name="lucide:facebook" size="20" />
-            </ULink>
+            <div class="flex gap-3 place-items-center">
+                <ULink class="flex place-content-center" to="/instagram">
+                    <Icon name="lucide:instagram" size="20" />
+                </ULink>
+                <ULink class="flex place-content-center" to="/facebook">
+                    <Icon name="lucide:facebook" size="20" />
+                </ULink>
+            </div>
+        </template>
+
+        <template #body>
+            <h1>text-sm</h1>
         </template>
     </UHeader>
 </template>

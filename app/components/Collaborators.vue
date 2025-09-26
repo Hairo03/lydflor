@@ -8,9 +8,9 @@ import odense from "./assets/images/collaborators/odensekommune.png"
         <div class="">
             <h1 class="text-5xl bold">Tak til vores partnere.</h1>
         </div>
-        <div class="flex gap-20">
-            <img :src="tuborg" class="w-auto h-40"/>
-            <img :src="odense" class="w-auto h-40"/>
+        <div class="flex lg:flex-row flex-col gap-20 px-10">
+            <img :src="tuborg" class="max-w-100% max-h-50"/>
+            <img :src="odense" class="max-w-100% max-h-50"/>
         </div>
     </UContainer>
 </template>

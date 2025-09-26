@@ -24,27 +24,27 @@ setInterval(updateTime, 1000, false)
 </script>
 
 <template>
-    <div class="bg-accent-400 py-20 mt-20">
+    <div class="bg-accent-400 py-20 mt-20 px-20 ">
         <UContainer class="flex flex-col items-center">
             <div class="flex flex-col items-center mb-5">
                 <Icon name="lydflor:text" size="40" />
                 <p>starter om...</p>
             </div>
-            <div class="flex justify-center gap-10">
+            <div class="flex justify-center sm:gap-10 gap-5">
                 <div class="flex flex-col items-center">
-                    <h1 class="text-6xl">{{ days }}</h1>
+                    <h1 class="sm:text-6xl text-5xl">{{ days }}</h1>
                     <h2>Dage</h2>
                 </div>
                 <div class="flex flex-col items-center">
-                    <h1 class="text-6xl">{{ hours % 24 }}</h1>
+                    <h1 class="sm:text-6xl text-5xl">{{ hours % 24 }}</h1>
                     <h2>Timer</h2>
                 </div>
                 <div class="flex flex-col items-center">
-                    <h1 class="text-6xl">{{ minutes % 60 }}</h1>
+                    <h1 class="sm:text-6xl text-5xl">{{ minutes % 60 }}</h1>
                     <h2>Minutter</h2>
                 </div>
                 <div class="flex flex-col items-center">
-                    <h1 class="text-6xl">{{ seconds % 60 }}</h1>
+                    <h1 class="sm:text-6xl text-5xl">{{ seconds % 60 }}</h1>
                     <h2>Sekunder</h2>
                 </div>
             </div>
