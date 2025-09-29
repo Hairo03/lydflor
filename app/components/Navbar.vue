@@ -25,6 +25,7 @@ const items = computed<NavigationMenuItem[]>(() => [
 ])
 
 let showBackground = ref(false);
+const isIndex = computed(() => route.path === "/")
 
 onMounted(() => {
   window.addEventListener("scroll", () => {
@@ -35,11 +36,11 @@ onMounted(() => {
 </script>
 
 <template>
-    <UHeader class="bg-primary-500/75 backdrop-blur-md transition-colors duration-300"
-        :class="{ 'bg-primary-500/0 border-none backdrop-blur-none': !showBackground }">
+    <UHeader :ui="{ header: 'bg-primary-400', content: 'bg-primary-400' } " mode="slideover" class="bg-primary-500/75 backdrop-blur-md transition-colors duration-300"
+        :class="{ 'bg-primary-500/0 border-none backdrop-blur-none': !showBackground && isIndex }">
         <template #left>
-            <UNavigationMenu class="hidden sm:block" :items="items" />
-            <ULink class="sm:hidden ml-5" to="/">
+            <UNavigationMenu class="hidden lg:block" :items="items" />
+            <ULink class="lg:hidden ml-5" to="/">
                 <Icon name="lydflor:text" size="35" />
             </ULink>
         </template>
@@ -59,7 +60,7 @@ onMounted(() => {
         </template>
 
         <template #body>
-            <h1>text-sm</h1>
+            <UNavigationMenu orientation="vertical" :items="items" />
         </template>
     </UHeader>
 </template>

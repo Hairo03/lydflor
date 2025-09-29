@@ -1,7 +1,8 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 const props = defineProps<{
-    date: Date
+    date: Date,
+    showBackground: boolean
 }>()
 
 
@@ -18,13 +19,12 @@ function updateTime() {
     currentTime.value = new Date().getTime();
 }
 
-
 setInterval(updateTime, 1000, false)
 
 </script>
 
 <template>
-    <div class="bg-accent-400 py-20 mt-20 px-20 ">
+    <div class="py-20 mt-20 px-20" :class="{ 'bg-accent-400': showBackground } ">
         <UContainer class="flex flex-col items-center">
             <div class="flex flex-col items-center mb-5">
                 <Icon name="lydflor:text" size="40" />

@@ -5,16 +5,14 @@ import heroImg from "./assets/images/farvergården.jpg"
 
 <template>
     <div class="h-screen w-screen absolute top-0 -z-10">
-        <img class="object-cover w-screen h-220 blur-xs" style="transform: scale(1.02);" :src="heroImg" />
+        <img class="object-cover w-screen h-220 blur-sm" style="transform: scale(1.02);" :src="heroImg" />
     </div>
 
     <UContainer class="pt-30">
         <div class="flex flex-col pb-30 pt-10">
             <img :src="logo" class="w-50 place-self-center" />
             <div class="text-center mb-30">
-                <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">Hvor lyden
-                    springer ud
-                    i fuldt flor.</h1>
+                <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">Musikfesitval i hjertet af Odense.</h1>
                 <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">Lyd:flor samler musikken,
                     menneskerne og stemningen i én oplevelse.</p>
                 <div class="mt-10 flex items-center justify-center gap-x-6">
@@ -39,7 +37,7 @@ import heroImg from "./assets/images/farvergården.jpg"
         </div>
     </UContainer>
 
-    <Countdown :date="new Date('9-5-2026')"/>
+    <Countdown :date="new Date('9-5-2026')" :show-background="true"/>
 
     <UContainer>
         <Collaborators/>
