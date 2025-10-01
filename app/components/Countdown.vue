@@ -24,7 +24,7 @@ setInterval(updateTime, 1000, false)
 </script>
 
 <template>
-    <div class="py-20 mt-20 px-20" :class="{ 'bg-accent-400': showBackground } ">
+    <div class="py-20 px-20" :class="{ 'bg-accent-400': showBackground } ">
         <UContainer class="flex flex-col items-center">
             <div class="flex flex-col items-center mb-5">
                 <Icon name="lydflor:text" size="40" />

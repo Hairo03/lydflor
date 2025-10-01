@@ -36,8 +36,8 @@ onMounted(() => {
 </script>
 
 <template>
-    <UHeader :ui="{ header: 'bg-primary-400', content: 'bg-primary-400' } " mode="slideover" class="bg-primary-500/75 backdrop-blur-md transition-colors duration-300"
-        :class="{ 'bg-primary-500/0 border-none backdrop-blur-none': !showBackground && isIndex }">
+    <UHeader :ui="{ header: 'bg-primary-400', content: 'bg-primary-400' } " mode="slideover" class="bg-primary-400 transition-colors duration-300"
+        :class="{ 'bg-primary-400/0 border-none backdrop-blur-none': !showBackground && isIndex }">
         <template #left>
             <UNavigationMenu class="hidden lg:block " :items="items" />
             <ULink class="lg:hidden ml-5 text-white-400 hover:text-secondary-400 transition-colors duration-200 " to="/">
