@@ -6,19 +6,19 @@ const route = useRoute()
 const items = computed<NavigationMenuItem[]>(() => [
     {
         label: 'Program',
-        to: '/program',
+        to: '/#program',
         active: route.path.startsWith('/program'),
         icon: "lucide:calendar"
     },
     {
-        label: 'Biletter',
-        to: '/biletter',
+        label: 'Billetter',
+        to: '/billetter',
         active: route.path.startsWith('/biletter'),
         icon: "lucide:ticket"
     },
     {
         label: 'Om os',
-        to: '/om-os',
+        to: '/#om-os',
         active: route.path.startsWith('/om-os'),
         icon: "lucide:info"
     }
@@ -36,15 +36,15 @@ onMounted(() => {
 </script>
 
 <template>
-    <UHeader :ui="{ header: 'bg-primary-400', content: 'bg-primary-400' } " mode="slideover" class="bg-primary-400 transition-colors duration-300"
+    <UHeader :ui="{ header: 'bg-primary-400', content: 'bg-primary-400' } " mode="slideover" class="top-0 z-50 fixed w-screen bg-primary-400 transition-colors duration-300"
         :class="{ 'bg-primary-400/0 border-none backdrop-blur-none': !showBackground && isIndex }">
         <template #left>
             <UNavigationMenu class="hidden lg:block " :items="items" />
-            <ULink class="lg:hidden ml-5 text-white-400 hover:text-secondary-400 transition-colors duration-200 " to="/">
+            <ULink class="lg:hidden ml-5 text-white-400 hover:text-secondary-400 transition-colors duration-200 " to="/#home">
                 <Icon name="lydflor:text" size="35" />
             </ULink>
         </template>
-        <ULink class="hidden md:block text-white-400 hover:text-secondary-400 transition-colors duration-200 " to="/">
+        <ULink class="hidden md:block text-white-400 hover:text-secondary-400 transition-colors duration-200 " to="/#home">
             <Icon name="lydflor:text" size="35" />
         </ULink>
 

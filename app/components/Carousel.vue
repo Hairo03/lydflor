@@ -29,7 +29,7 @@ const artists = [
       item: 'basis-[70%]'
     }"
     class="mx-auto max-w-sm mx-5"
-    :auto-scroll="{ startDelay:2000, speed: 0.75 }"
+    :auto-scroll="{ startDelay:2000, speed: 0.5 }"
   >
     <Card :title="item" :src="items[index]"/>
   </UCarousel>

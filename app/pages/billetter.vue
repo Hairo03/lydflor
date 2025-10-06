@@ -1,5 +1,5 @@
 <template>
   <div>
-    <h1>Welcome to the biletter</h1>
+    <h1>Welcome to the billetter</h1>
   </div>
 </template>
