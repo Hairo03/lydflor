@@ -19,7 +19,7 @@ function updateTime() {
     currentTime.value = new Date().getTime();
 }
 
-setInterval(updateTime, 1000, false)
+onMounted(() => setInterval(updateTime, 1000, false))
 
 </script>
 

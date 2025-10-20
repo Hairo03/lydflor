@@ -6,7 +6,7 @@
                 <div class="md:flex md:justify-between">
                     <div class="mb-6 md:mb-0">
                         <ULink to="/" class="flex items-center text-white">
-                            <Icon name="lydflor:logo-test" size="25" class="me-3" />
+                            <Icon name="lydflor:blomst" size="20" class="me-3" />
                             <Icon name="lydflor:text" size="25"/>
                         </ULink>
                     </div>

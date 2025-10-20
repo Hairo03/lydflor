@@ -15,20 +15,16 @@ const artists = [
 ]
 </script>
 
-<!-- TODO: Make arrows work when autoscrolling -->
-
 <template>
   <UCarousel
     v-slot="{ item, index }"
     class-names
     loop
     :items="artists"
-    prev-icon="lucide:chevron-left"
-    next-icon="lucide:chevron-right"
     :ui="{
-      item: 'basis-[70%]'
+      item: 'basis-[auto] lg:basis-[auto]'
     }"
-    class="mx-auto max-w-sm mx-5"
+    class="w-full lg:w-120 cursor-grab mx-10 lg:mx-0.5"
     :auto-scroll="{ startDelay:2000, speed: 0.5 }"
   >
     <Card :title="item" :src="items[index]"/>
