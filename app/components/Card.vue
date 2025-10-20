@@ -19,7 +19,7 @@ defineProps({
 })
 </script>
 <template>
-  <div :style="{ backgroundImage: `url(${src})` }" class="flex flex-col h-133 w-95 items-start justify-end rounded-lg">
+  <div :style="{ backgroundImage: `url(${src})` }" class="flex flex-col w-70 h-100 md:h-133 md:w-95 items-start justify-end rounded-lg">
     <div class="flex flex-col justify-center p-4">
       <div class="flex items-center gap-2">
         <h5 class="select-none mb-2 text-2xl font-bold tracking-tight text-white">{{ title }}</h5>

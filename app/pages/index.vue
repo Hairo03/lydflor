@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import logo from "./assets/images/lydflor-no-bg.png"
 import heroImg from "./assets/images/farvergården.jpg"
 import Carousel from "~/components/Carousel.vue";
 </script>
@@ -14,7 +13,7 @@ import Carousel from "~/components/Carousel.vue";
             <div class="flex flex-col">
                 <Icon name="lydflor:logo-test" size="250" class="w-50 place-self-center text-white-400" />
                 <div class="text-center mb-30">
-                    <h1 class="text-5xl font-semibold tracking-tight text-balance text-white sm:text-7xl">
+                    <h1 class="text-5xl font-semibold tracking-tight text-balance text-white-400 sm:text-7xl">
                         Musikfestival
                         i hjertet af Odense.</h1>
                     <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">En endagsfestival, hvor musikken, menneskerne og stemningen står i fuldt flor</p>

@@ -16,17 +16,16 @@
 
 @theme static {
 
-
-  /* fern_green */
-  --color-fern_green-50: #e0e8d8;
-  --color-fern_green-100: #c0d0b1;
-  --color-fern_green-200: #a1b98a;
-  --color-fern_green-300: #82a263;
-  --color-fern_green-400: #647e4b;
-  --color-fern_green-500: #4f633c;
-  --color-fern_green-600: #3b4b2d;
-  --color-fern_green-700: #27321e;
-  --color-fern_green-800: #14190f;
+ /* fern_green */
+  --color-fern_green-50: #dde7d5;
+  --color-fern_green-100: #bbcfaa;
+  --color-fern_green-200: #9ab780;
+  --color-fern_green-300: #789d58;
+  --color-fern_green-400: #577240;
+  --color-fern_green-500: #465b33;
+  --color-fern_green-600: #354527;
+  --color-fern_green-700: #232e1a;
+  --color-fern_green-800: #12170d;
   --color-fern_green-900: #0a0f08;
 
   /* flame */
@@ -39,6 +38,19 @@
   --color-flame-600: #8e2e0e;
   --color-flame-700: #5f1f09;
   --color-flame-800: #2f0f05;
+  --color-flame-900: #180802;
+
+  /* anti-flash_white */
+  --color-white-50: #fdfdfd;
+  --color-white-100: #fafafc;
+  --color-white-200: #f8f8fa;
+  --color-white-300: #f5f5f8;
+  --color-white-400: #f2f2f6;
+  --color-white-500: #b9b9ce;
+  --color-white-600: #7f7fa6;
+  --color-white-700: #505074;
+  --color-white-800: #28283a;
+  --color-white-900: #16161f;
 
   /* eerie_black */
   --color-eerie_black-50: #d0d1d4;
@@ -50,18 +62,7 @@
   --color-eerie_black-600: #111213;
   --color-eerie_black-700: #0c0c0d;
   --color-eerie_black-800: #060606;
-
-  /* white */
-  --color-white-50: #fefeff;
-  --color-white-100: #fdfeff;
-  --color-white-200: #fdfdfe;
-  --color-white-300: #fcfdfe;
-  --color-white-400: #fbfcfe;
-  --color-white-500: #EFEFEF;
-  --color-white-600: #DCDCDC;
-  --color-white-700: #CBCBCB;
-  --color-white-800: #B6B6B6;
-  --color-white-900: #A7A7A7;
+  --color-eerie_black-900: #030303;
 
 }
 
@@ -77,7 +78,7 @@
   --ui-warning: var(--ui-color-warning-500);
   --ui-error: var(--ui-color-error-500);
 
-  --ui-text-dimmed: var(--ui-color-neutral-700);
+  --ui-text-dimmed: var(--ui-color-neutral-500);
   --ui-text-muted: var(--ui-color-neutral-400);
   --ui-text-toned: var(--ui-color-accent-400);
   --ui-text: var(--ui-color-secondary-400);
