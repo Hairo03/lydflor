@@ -10,9 +10,9 @@ import Carousel from "~/components/Carousel.vue";
         <div class="absolute inset-0 w-full h-full backdrop-blur-sm z-0"></div>
 
         <UContainer class="z-10">
-            <div class="flex flex-col items-center">
+            <div class="flex flex-col items-center my-auto">
                 <Icon name="lydflor:logo-test" size="250" class="md:w-sm md:h-sm size-[10rem] text-white-400" />
-                <div class="text-center mb-30">
+                <div class="text-center">
                     <h1 class="text-5xl font-semibold tracking-tight text-balance text-white-400 sm:text-7xl">
                         Musikfestival
                         i hjertet af Odense.</h1>
