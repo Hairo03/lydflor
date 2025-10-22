@@ -38,7 +38,7 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: "Lydflor",
+      title: "Lyd:Flor",
       htmlAttrs: {
         lang: "da"
       },

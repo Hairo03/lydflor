@@ -12,7 +12,8 @@ const items = computed<NavigationMenuItem[]>(() => [
     },
     {
         label: 'Billetter',
-        to: '/#billetter-external-link',
+        to: 'https://kulturmaskinen.dk/events/lyd-flor',
+        target: '_blank',
         active: route.path.startsWith('/#billetter-external-link'),
         icon: "lucide:ticket"
     },
@@ -54,10 +55,10 @@ onMounted(() => {
 
         <template #right>
             <div class="flex gap-3 place-items-center">
-                <ULink class="flex place-content-center" to="/#instagram-external-link">
+                <ULink class="flex place-content-center" to="https://www.instagram.com/lydflorfestival/" target="_blank">
                     <Icon name="lucide:instagram" size="20" />
                 </ULink>
-                <ULink class="flex place-content-center" to="/#facebook-external-link">
+                <ULink class="flex place-content-center" to="https://www.facebook.com/lydflorfestival/" target="_blank">
                     <Icon name="lucide:facebook" size="20" />
                 </ULink>
             </div>

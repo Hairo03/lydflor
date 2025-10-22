@@ -5,7 +5,7 @@ import km from "./assets/images/collaborators/kulturmaskinen.svg"
 </script>
 
 <template>
-    <UContainer class="flex flex-col items-center gap-15 mt-30 mb-35">
+    <UContainer class="flex flex-col items-center gap-15 mt-10 mb-35">
         <div class="">
             <h1 class="text-5xl bold">Tak til vores partnere.</h1>
         </div>

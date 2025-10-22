@@ -37,7 +37,7 @@ const prices = [
                 <div v-for="price in prices">
                     <PricingBar :title="price.title" :subtitle="price.subtitle" :price="price.price" />
                 </div>
-                <UButton target="_blank" trailing-icon="lucide:external-link" class="mt-2" size="xl">Køb billet
+                <UButton target="_blank" trailing-icon="lucide:external-link" class="mt-2" size="xl" to="https://kulturmaskinen.dk/events/lyd-flor">Køb billet
                 </UButton>
             </div>
             <!-- <Icon
