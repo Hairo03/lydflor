@@ -29,7 +29,7 @@ const isIndex = computed(() => route.path === "/")
 
 onMounted(() => {
     window.addEventListener("scroll", () => {
-        showBackground.value = window.scrollY > 800
+        showBackground.value = window.scrollY > window.innerHeight - 100
     })
 })
 
