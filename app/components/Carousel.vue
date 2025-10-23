@@ -1,16 +1,14 @@
 <script setup lang="ts">
 import will from './assets/images/artists/will.jpg'
+import tba from './assets/images/artists/tba.jpg'
 
 const items = [
   will,
+  tba,
   will,
-  will
-]
-
-const artists = [
-    'Artist 1',
-    'Artist 2',
-    'Artist 3'
+  tba,
+  will,
+  tba
 ]
 </script>
 
@@ -19,7 +17,7 @@ const artists = [
     v-slot="{ item, index }"
     class-names
     loop
-    :items="artists"
+    :items="items"
     :ui="{
       item: 'basis-[auto] lg:basis-[auto]'
     }"

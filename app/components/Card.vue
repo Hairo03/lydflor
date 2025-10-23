@@ -1,16 +1,8 @@
 <script setup>
 defineProps({
-  title: {
-    type: String,
-    default: "Placeholder"
-  },
   src: {
     type: String,
     required: false
-  },
-  description: {
-    type: String,
-    default: "Lorem Ipsum Dolor"
   },
   icon: {
     type: String,
