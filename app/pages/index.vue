@@ -11,9 +11,9 @@ import Carousel from "~/components/Carousel.vue";
 
         <UContainer class="z-10">
             <div class="flex flex-col items-center my-auto">
-                <Icon name="lydflor:logo-test" size="250" class="md:w-sm md:h-sm size-[10rem] text-white-400" />
+                <Icon name="lydflor:logo-test" size="250" class="sm:size-[10rem] size-[7rem] text-white-400" />
                 <div class="text-center">
-                    <h1 class="text-5xl font-semibold tracking-tight text-balance text-white-400 sm:text-7xl">
+                    <h1 class="text-4xl font-semibold tracking-tight text-balance text-white-400 sm:text-7xl">
                         Musikfestival
                         i hjertet af Odense.</h1>
                     <p class="mt-8 text-lg font-medium text-pretty text-gray-300 sm:text-xl/8">En endagsfestival, hvor musikken, menneskerne og stemningen står i fuldt flor</p>
@@ -34,7 +34,7 @@ import Carousel from "~/components/Carousel.vue";
     </UContainer>
     
     <ClientOnly>
-        <Countdown class="mt-10" :date="new Date('5-9-2026 15:00')" :show-background="true" />
+        <Countdown class="mt-10" :date="new Date('2026-05-09T15:00:00')" :show-background="true" />
     </ClientOnly>
     
     <span id="om-os"/>

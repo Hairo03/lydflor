@@ -22,7 +22,7 @@ const items = [
       item: 'basis-[auto] lg:basis-[auto]'
     }"
     class="w-full lg:w-120 cursor-grab mx-10 lg:mx-0.5"
-    :auto-scroll="{ speed: 0.5 }"
+    :auto-scroll="{ startDelay: 2000, speed: 0.5 }"
   >
     <Card :title="item" :src="items[index]"/>
   </UCarousel>

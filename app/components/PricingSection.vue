@@ -33,16 +33,13 @@ const prices = [
                 <USeparator class="mt-3" />
                 <p class="text-lg mt-2 lg:text-nowrap text-toned">Billetsalget til <span>
                         <Icon name="lydflor:text" size="16" class="align-middle mx-1 text-toned" />
-                    </span> starter d. 1. november 2025</p>
+                    </span> er i fuld gang.</p>
                 <div v-for="price in prices">
                     <PricingBar :title="price.title" :subtitle="price.subtitle" :price="price.price" />
                 </div>
                 <UButton target="_blank" trailing-icon="lucide:external-link" class="mt-2" size="xl" to="https://kulturmaskinen.dk/events/lyd-flor">Køb billet
                 </UButton>
             </div>
-            <!-- <Icon
-                class="text-white-400 self-center align-middle m-auto mr-9 lg:-mr-5 hidden md:block lg:hidden xl:block"
-                name="lydflor:logo-text-black" size="300" /> -->
         </div>
     </div>
 </template>

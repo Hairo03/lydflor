@@ -1,25 +1,36 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onBeforeUnmount } from 'vue';
 const props = defineProps<{
-    date: Date,
+    date: Date | string,
     showBackground: boolean
 }>()
 
+const targetTime = computed(() => {
+    const dateObj = typeof props.date === 'string' ? new Date(props.date) : props.date;
+    return dateObj.getTime();
+});
 
-const targetTime = props.date.getTime();
 const currentTime = ref(new Date().getTime());
-const timeRemaining = computed(() => targetTime - currentTime.value);
+const timeRemaining = computed(() => targetTime.value - currentTime.value);
 
 const seconds = computed(() => Math.floor(timeRemaining.value / 1000));
 const minutes = computed(() => Math.floor(seconds.value / 60));
 const hours = computed(() => Math.floor(minutes.value / 60));
 const days = computed(() => Math.floor(hours.value / 24));
 
+let intervalId: ReturnType<typeof setInterval> | null = null;
+
 function updateTime() {
     currentTime.value = new Date().getTime();
 }
 
-onMounted(() => setInterval(updateTime, 1000, false))
+onMounted(() => {
+    intervalId = setInterval(updateTime, 1000);
+})
+
+onBeforeUnmount(() => {
+    if (intervalId) clearInterval(intervalId);
+})
 
 </script>
 
