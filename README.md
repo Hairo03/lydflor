@@ -1,6 +1,28 @@
-# Nuxt Minimal Starter
+# Lyd:Flor - Festival Website
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Lyd:Flor is a new one day festival taking place in Odense on May 9, 2026, focusing on young people and emerging artists in the local music scene.
+
+## Live site
+https://lydflor.dk/
+
+## About the project
+This was my first published website. I was responsible for the design and development of a responsive and accessible site that aligns with the festival’s visual identity.
+
+The project taught me a lot about collaborating with a small creative team, handling real-world feedback, and deploying a production-ready site.
+## Tech Stack
+
+* HTML, CSS and TypeScript
+* **Framework**: Nuxt.js
+* **Styling**: Tailwind CSS
+
+
+## Authors
+
+ Jonathan V. Lacor
+* [Github](https://github.com/Hairo03)
+* [Linkedin](https://www.linkedin.com/in/jonathan-vinther-lacor/)
+
+
 
 ## Setup
 
@@ -36,40 +58,6 @@ yarn dev
 
 # bun
 bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
