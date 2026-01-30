@@ -22,6 +22,12 @@ const items = computed<NavigationMenuItem[]>(() => [
         to: '/#om-os',
         active: route.path.startsWith('/#om-os'),
         icon: "lucide:info"
+    },
+    {
+        label: 'Bliv frivillig',
+        to: '/blivfrivillig',
+        active: route.path.startsWith('/blivfrivillig'),
+        icon: "lucide:users"
     }
 ])
 
