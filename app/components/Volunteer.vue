@@ -35,7 +35,7 @@ const handleSubmit = async (event) => {
 
 <template>
     <form id="volunteer-form" @submit.prevent="handleSubmit">
-        <div class="flex-col space-y-4">
+        <div class="flex flex-col space-y-4">
             <UFormField label="Navn" required size="xl">
                 <UInput name="name" type="text" required />
             </UFormField>
