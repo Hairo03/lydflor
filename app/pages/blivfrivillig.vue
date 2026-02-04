@@ -6,7 +6,7 @@ import Volunteer from '~/components/Volunteer.vue';
 <template>
     <UContainer class="pt-30">
         <div class="flex flex-row">
-            <div class="flex flex-col space-y-4 w-1/2">
+            <div class="flex flex-col space-y-4 w-full xl:w-1/2">
                 <h1 class="text-4xl font-semibold mb-6">Bliv frivillig på Lyd:Flor 2026</h1>
                 <p class="text-toned">
                     På Lyd:Flor er de frivillige det allervigtigste på festivalen! Lyd:Flor er bygget på frivillighed,
@@ -54,9 +54,16 @@ import Volunteer from '~/components/Volunteer.vue';
 
                 </p>
             </div>
-            <img src="https://placehold.co/300x400" alt="Frivillige på Lyd:Flor" class="w-1/2 rounded-lg object-cover ml-10"/>
+            <img src="https://placehold.co/300x400" alt="Frivillige på Lyd:Flor" class="w-1/2 rounded-lg object-cover ml-10 hidden xl:block"/>
         </div>
-        <Volunteer class="py-15"/>
+        <div>
+            <h2 class="text-3xl font-semibold mt-20 mb-6">Ansøg om at blive frivillig her</h2>
+            <p class="text-toned mb-10">
+                Udfyld formularen nedenfor for at ansøge om at blive frivillig på Lyd:Flor 2026. Vi glæder os til at
+                høre fra dig!
+            </p>
+        </div>
+        <Volunteer class="pb-20"/>
     </UContainer>
 </template>
 
