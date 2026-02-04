@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import Volunteer from '~/components/Volunteer.vue';
 
-
 </script>
 
 <template>

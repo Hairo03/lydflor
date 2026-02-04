@@ -1,8 +1,20 @@
 <script setup>
 import { ref } from 'vue';
 
+useHead({
+    script: [
+        {
+            src: 'https://www.google.com/recaptcha/api.js',
+            async: true,
+            defer: true,
+            type: 'text/javascript'
+        }
+    ]
+})
+
+
 const url =
-    'https://script.google.com/macros/s/AKfycbwkYzQYWwZyPmgY5ND-Fyy262-bXA3NJIgnHrr9_kh5p6bmlAd_v_0sAkCNR5XXReyI/exec';
+    'https://script.google.com/macros/s/AKfycbzj-gVQKKOeFqdwOCuu6SszMGljIz1gV9-gAtmkSRK8C4YP_4dl64dpIBndhHNg0x21/exec';
 
 const loading = ref(false);
 
@@ -10,9 +22,20 @@ const handleSubmit = async (event) => {
     event.preventDefault();
     loading.value = true;
 
+    // Get reCAPTCHA token
+    const recaptchaToken = window.grecaptcha.getResponse();
+    if (!recaptchaToken) {
+        alert('Bekræft venligst at du ikke er en robot.');
+        loading.value = false;
+        return;
+    }
+
     const form = event.target;
     const formData = new FormData(form);
     const data = Object.fromEntries(formData);
+
+    // Add reCAPTCHA token under the correct key
+    data.gCaptchaResponse = recaptchaToken;
 
     try {
         const res = await fetch(url, {
@@ -25,6 +48,7 @@ const handleSubmit = async (event) => {
         const result = await res.json();
         console.log('Successful', result);
         form.reset();
+        window.grecaptcha.reset(); // Reset reCAPTCHA for next submission
     } catch (err) {
         console.log('err', err);
     } finally {
@@ -35,28 +59,35 @@ const handleSubmit = async (event) => {
 
 <template>
     <form id="volunteer-form" @submit.prevent="handleSubmit">
-        <div class="flex flex-col space-y-4">
-            <UFormField label="Navn" required size="xl">
-                <UInput name="name" type="text" required />
+        <div class="flex flex-col space-y-4 w-full">
+            <UFormField label="Fulde navn" required size="xl">
+                <UInput name="name" type="text" required class="w-full"/>
             </UFormField>
-            <UFormField label="Email" required size="xl">
-                <UInput name="email" type="email" required />
-            </UFormField>
-            <UFormField label="Telefonnummer" required size="xl">
-                <UInput name="phone-number" type="tel" required />
-            </UFormField>
-            <UFormField label="Størrelse på t-shirt" required size="xl">
-                <UInput name="shirt-size" type="text" required />
-            </UFormField>
-            <UFormField label="Har du en ven du meget gerne vil have en vagt med? Hvis ja, skriv deres fulde navn:" size="xl">
-                <UInput name="preferred-friend" type="text" />
+            <div class="flex space-x-4 w-full">
+                <UFormField label="Email" required size="xl" class="w-full">
+                    <UInput name="email" type="email" required class="w-full"/>
+                </UFormField>
+                <UFormField label="Telefonnummer" required size="xl" class="w-full">
+                    <UInput name="phone-number" type="tel" required class="w-full"/>
+                </UFormField>
+            </div>
+            <div class="flex space-x-4 w-full">
+                <UFormField label="Størrelse på t-shirt" required size="xl" class="w-full">
+                    <UInput name="shirt-size" type="text" required class="w-full"/>
+                </UFormField>
+            </div>
+            <UFormField label="Har du en ven du meget gerne vil have en vagt med? Hvis ja, skriv deres fulde navn:"
+                size="xl">
+                <UInput name="preferred-friend" type="text" class="w-full"/>
             </UFormField>
             <UFormField label="Skriv lidt om dig selv - hvad kan du byde ind med?" required size="xl">
-                <UTextarea name="about-yourself" type="text" required />
+                <UTextarea name="about-yourself" type="text" required class="w-full"/>
             </UFormField>
-            <UFormField label="Har du allergier, er du veganer eller er der andet vi skal være opmærksomme på?" size="xl">
-                <UInput name="allergies" type="text" />
+            <UFormField label="Har du allergier, er du veganer eller er der andet vi skal være opmærksomme på?"
+                size="xl" class="w-full">
+                <UInput name="allergies" type="text" class="w-full"/>
             </UFormField>
+            <div class="g-recaptcha" data-sitekey="6LcLZGAsAAAAAM3jqsN5R2A5ALHULwLy9chVJ_Bu"></div>
             <UButton type="submit" class="mt-4" :loading="loading" size="xl">Send</UButton>
         </div>
     </form>
