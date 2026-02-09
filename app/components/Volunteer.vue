@@ -14,7 +14,7 @@ useHead({
 
 
 const url =
-    'https://script.google.com/macros/s/AKfycbzj-gVQKKOeFqdwOCuu6SszMGljIz1gV9-gAtmkSRK8C4YP_4dl64dpIBndhHNg0x21/exec';
+    'https://script.google.com/macros/s/AKfycbwOBGhiXEs6pSUHhTBuE5MIGk9vrENtVDv488fKFYZG9zQuwhct6_3MS2_ecY-GfQey/exec';
 
 const loading = ref(false);
 
