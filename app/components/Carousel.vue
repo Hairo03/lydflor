@@ -3,6 +3,7 @@ import will from './assets/images/artists/will.jpg'
 import karoline_mousing from './assets/images/artists/karoline_mousing.jpg'
 import karla_korsbak from './assets/images/artists/karla_korsbak.jpg'
 import holdo from './assets/images/artists/holdo.jpg'
+import røverdatter from './assets/images/artists/røverdatter.jpg'
 import tba from './assets/images/artists/tba.jpg'
 
 const items = [
@@ -10,6 +11,7 @@ const items = [
   karla_korsbak,
   karoline_mousing,
   holdo,
+  røverdatter,
   tba,
 ]
 </script>

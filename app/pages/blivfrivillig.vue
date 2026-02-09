@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Volunteer from '~/components/Volunteer.vue';
+import blivfrivillig from '~/assets/images/blivfrivillig.jpg';
 
 </script>
 
@@ -54,7 +55,7 @@ import Volunteer from '~/components/Volunteer.vue';
 
                 </p>
             </div>
-            <img src="https://placehold.co/300x400" alt="Frivillige på Lyd:Flor" class="w-1/2 rounded-lg object-cover ml-10 hidden xl:block"/>
+            <img :src="blivfrivillig" alt="Frivillige på Lyd:Flor" class="w-1/2 rounded-lg object-cover ml-10 hidden xl:block"/>
         </div>
         <div>
             <h2 class="text-3xl font-semibold mt-20 mb-6">Ansøg om at blive frivillig her</h2>
