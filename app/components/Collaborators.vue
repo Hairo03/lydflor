@@ -4,6 +4,7 @@ import odense from "./assets/images/collaborators/odensekommune.png"
 import km from "./assets/images/collaborators/kulturmaskinen.svg"
 import albani from "./assets/images/collaborators/albani.png"
 import skf from "./assets/images/collaborators/statenskulturfond.png"
+import nordeaFonden from "./assets/images/collaborators/nordea-fonden.png"
 </script>
 
 <template>
@@ -20,6 +21,9 @@ import skf from "./assets/images/collaborators/statenskulturfond.png"
                 <img :src="albani" class="h-50 w-auto object-contain" />
                 <img :src="odense" class="ml-10 h-25 w-auto object-contain" />
                 <img :src="skf" class="h-60 w-auto object-contain" />
+            </div>
+            <div class="flex flex-col lg:flex-row gap-5 lg:gap-20 items-center">
+                <img :src="nordeaFonden" class="h-20 w-auto object-contain" />
             </div>
         </div>
     </UContainer>
