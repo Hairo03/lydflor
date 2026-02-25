@@ -13,12 +13,12 @@ const prices = [
     },
     {
         title: "Half Access - u. 26/studerende",
-        subtitle: "(3 koncerter på Magasinet)",
+        subtitle: "(Von Quar, Will og Karoline Mousing på Magasinet)",
         price: "200 kr."
     },
     {
         title: "Half Access - Almen",
-        subtitle: "(3 koncerter på Magasinet)",
+        subtitle: "(Von Quar, Will og Karoline Mousing på Magasinet)",
         price: "300 kr."
     },
 ]

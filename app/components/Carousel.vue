@@ -4,7 +4,7 @@ import karoline_mousing from './assets/images/artists/karoline_mousing.jpg'
 import karla_korsbak from './assets/images/artists/karla_korsbak.jpg'
 import holdo from './assets/images/artists/holdo.jpg'
 import røverdatter from './assets/images/artists/røverdatter.jpg'
-import tba from './assets/images/artists/tba.jpg'
+import von_quar from './assets/images/artists/von_quar.jpg'
 
 const items = [
   will,
@@ -12,7 +12,7 @@ const items = [
   karoline_mousing,
   holdo,
   røverdatter,
-  tba,
+  von_quar
 ]
 </script>
 
@@ -26,7 +26,7 @@ const items = [
       item: 'basis-[auto] lg:basis-[auto]'
     }"
     class="w-full lg:w-120 cursor-grab mx-10 lg:mx-0.5"
-    :auto-scroll="{ startDelay: 2000, speed: 0.5 }"
+    :auto-scroll="{ startDelay: 1000, speed: 0.5 }"
   >
     <Card :title="item" :src="items[index]"/>
   </UCarousel>

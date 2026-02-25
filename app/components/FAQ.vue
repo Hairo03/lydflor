@@ -21,7 +21,7 @@ Mellem de to scener finder du festivalens hangout-område - et hyggeligt fælles
 Der findes to forskellige billettyper:
 
 - **All Access-billet** - Giver adgang til alle 6 koncerter, både på Magasinet og Frølageret.
-- **Half Access-billet** - Giver adgang til de 3 største koncerter på Magasinet.
+- **Half Access-billet** - Giver adgang til Von Quar, Will og Karoline Mousing på Magasinet.
     `
     },
     {
@@ -30,7 +30,7 @@ Der findes to forskellige billettyper:
         content: `
 **All Access-billetten** giver dig hele oplevelsen! Du får adgang til både Magasinet og Frølageret, og kan dermed se alle 6 koncerter i løbet af dagen.
 
-**Half Access-billetten** er for dig, der primært er interesseret i de artister der spiller på Magasinet. Her får du adgang til de 3 koncerter på Magasinet - og stadig en kæmpe festivaloplevelse!
+**Half Access-billetten** er for dig, der primært er interesseret i Von Quar, Will og Karoline Mousing, som spiller på Magasinet. Her får du adgang til de 3 koncerter på Magasinet - og stadig en kæmpe festivaloplevelse!
     `
     },
     {
