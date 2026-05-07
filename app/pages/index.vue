@@ -42,11 +42,15 @@ useSeoMeta({
         <TextScroller class="w-screen absolute bottom-0" text="9. MAJ 2026" icon="lydflor:blomst" id="program" />
     </div>
 
-    <UContainer class="my-15 flex flex-col lg:flex-row items-center justify-center gap-5">
+    <UContainer class="mt-15 flex flex-col lg:flex-row items-center justify-center gap-5">
         <Carousel />
         <PricingSection />
     </UContainer>
 
+    <UContainer class="mb-15">
+        <Schedule />
+    </UContainer>
+    
     <ClientOnly>
         <Countdown class="mt-10" :date="new Date('2026-05-09T15:00:00')" :show-background="true" />
     </ClientOnly>
